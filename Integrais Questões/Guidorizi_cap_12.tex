@@ -1,0 +1,629 @@
+\documentclass{article}
+\title{Capítulo 10}
+\author{Lucas Ferreira - 0418399}
+\date{}
+\usepackage{amsmath, graphicx, xcolor}
+
+\begin{document}
+
+\maketitle
+
+%\sqrt[3](x)
+%\textbf{u = (x+1)}
+
+\section{Exercícios 12.1}
+\textbf{1.}
+\begin{gather*}
+    \int \frac{1}{x}\,dx
+\\
+    = ln(x) + k
+\\
+\end{gather*}
+
+\textbf{2.}
+\begin{gather*}
+    \int 3\,dx
+\\
+    = 3\int 1\,dx
+\\
+    = 3x + k
+\end{gather*}
+
+\textbf{3.}
+\begin{gather*}
+    \int x^5\,dx
+\\
+    = \frac{x^6}{6} + k
+\\
+\end{gather*}
+
+\textbf{4.}
+\begin{gather*}
+    \int x\,dx
+\\
+    = \frac{x^2}{2} + k
+\\
+\end{gather*}
+
+\textbf{5.}
+\begin{gather*}
+    \int \sqrt(x) \,dx
+\\
+    = \frac{2x^{\frac{3}{2}}}{3} + k
+\\
+\end{gather*}
+
+\textbf{6.}
+\begin{gather*}
+    \int \sqrt[3](x^2) \,dx
+\\
+    = \frac{5x^{\frac{7}{3}}}{7} + k
+\\
+\end{gather*}
+
+\textbf{7.}
+\begin{gather*}
+    \int x^{-4} \,dx
+\\
+    = \int \frac{1}{x^4} \,dx
+\\
+    = -\frac{1}{3x^3} + k
+\end{gather*}
+
+\textbf{8.}
+\begin{gather*}
+    \int \frac{1}{x^3} \,dx
+\\
+    = \frac{1}{2x^2} + k
+\\
+\end{gather*}
+
+\textbf{9.}
+\begin{gather*}
+    \int \frac{x+x^2}{x^2} \,dx
+\\
+    = \int \frac{x+1}{x}\,dx
+\\
+    = \int (\frac{1}{x} + 1)\,dx
+\\
+    = \int \frac{1}{x}\,dx + \int 1\,dx
+\\
+    = ln(x) + x + k
+\end{gather*}
+
+\textbf{10.}
+\begin{gather*}
+    \int (\frac{1}{x} + \frac{1}{x^2}) \,dx
+\\
+    = \int \frac{1}{x}\,dx + \int \frac{1}{x^2}\,dx
+\\
+    = ln(x) - \frac{1}{x} + k
+\\
+\end{gather*}
+
+\textbf{11.}
+\begin{gather*}
+    \int (x^2 + \frac{3}{x})\,dx
+\\
+    = \int x^2\,dx + 3\int \frac{1}{x}\,dx
+\\
+    = 3ln(x) + \frac{x^3}{3} + k
+\end{gather*}
+
+\textbf{12.}
+\begin{gather*}
+    \int \frac{x+1}{x}\,dx
+\\
+    = \int \frac{1}{x}\,dx + \int 1\,dx
+\\
+    = ln(x) + x + k
+\end{gather*}
+
+\textbf{13.}
+\begin{gather*}
+    \int (e^x + 4)\,dx
+\\
+    = \int e^x\,dx + 4\int 1\,dx
+\\
+    = e^x + 4x + k
+\end{gather*}
+
+\textbf{14.}
+\begin{gather*}
+    \int e^{5x}\,dx
+\\
+    \textbf{u = 5x}
+\\
+    = \frac{1}{5}\int e^u\,du
+\\
+    = \frac{e^u}{5}
+\\ 
+    = \frac{e^{5x}}{5} + k
+\\
+\end{gather*}
+
+\textbf{15.}
+\begin{gather*}
+    \int e^{-2x}\,dx
+\\
+    \textbf{u = -2x}
+\\
+    = -\frac{1}{2}\int e^u\,du
+\\
+    = \frac{e^u}{2}
+\\ 
+    = \frac{e^{-2x}}{2} + k
+\\
+\end{gather*}
+
+\textbf{16.}
+\begin{gather*}
+    \int (e^{2x} + e^{-x})\,dx
+\\
+    = \int e^{2x}\,dx + \int e^{-x}\,dx
+\\
+    = \frac{1}{2} \int e^u\,du + \int e^u\,du
+\\ 
+    = \frac{e^{2x}}{2} - e^{-x} + k
+\\
+\end{gather*}
+
+\textbf{17.}
+\begin{gather*}
+    \int (\frac{1}{x} + \frac{1}{e^x})\,dx
+\\
+    = \int e^{-x} \,dx + \int \frac{1}{x}\,dx
+\\
+    \textbf{u = -x}
+\\ 
+    = \int e^{u} \,du + \int \frac{1}{x}\,dx
+\\
+    = e^u + ln(x)
+\\ 
+    = ln(x) - e^{-x} + k
+\end{gather*}
+
+\textbf{18.}
+\begin{gather*}
+    \int (e^{4x} + \frac{1}{x^2})\,dx
+\\
+    = \int e^{4x} \,dx + \int \frac{1}{x^2}\,dx
+\\
+    \textbf{u = 4x}
+\\ 
+    = \frac{1}{4}\int e^u\,du + (-\frac{1}{x})
+\\
+    = \frac{e^u}{4} - \frac{1}{x}
+\\ 
+    = \frac{e^{4x}}{4} - \frac{1}{x} + k
+\end{gather*}
+
+\textbf{19.}
+\begin{gather*}
+    \int \frac{x^5+x+1}{x^2}\,dx
+\\
+    = \int (x^3 + \frac{1}{x} + \frac{1}{x^2}) \,dx
+\\
+    = \int x^3\,dx + \int \frac{1}{x}\,dx + \int \frac{1}{x^2}\,dx
+\\ 
+    = ln(x) + \frac{x^4}{4} - \frac{1}{x} + k
+\\
+\end{gather*}
+
+\textbf{20.}
+\begin{gather*}
+    \int (\frac{3}{x} + \frac{2}{x^3})\,dx
+\\
+    = 3\int \frac{1}{x}\,dx + 2\int \frac{1}{x^3}\,dx
+\\
+    = 3ln(x) - \frac{1}{x^2} + k
+\\
+\end{gather*}
+
+\textbf{21.}
+\begin{gather*}
+    \int e^{\sqrt(2x)}\,dx
+\\
+    = \int e^{\sqrt2x\sqrt(x)}\,dx
+\\
+    \textbf{u = } \sqrt(x)
+\\
+    = 2\int ue^{\sqrt(2u)}\,du
+\\
+    = (\sqrt2\sqrt(x) - 1) e^{\sqrt2\sqrt(x)} + k
+\end{gather*}
+
+\textbf{22.}
+\begin{gather*}
+    \int_{0}^{1} e^{2x} \,dx
+\\
+    = \int e^{2x}\,dx
+\\
+    \textbf{u = 2x}
+\\
+    = \frac{1}{2} \int e^u \,du
+\\
+    = \frac{e^2}{2}
+\\
+    = \frac{e^{2x}}{2} + k = \frac{e^2-1}{2}
+\\ 
+\end{gather*}
+
+\textbf{23.}
+\begin{gather*}
+    \int_{1}^{2} x+\frac{1}{x} \,dx
+\\
+    = \int x\,dx + \int \frac{1}{x}\,dx
+\\
+    = ln(x) + \frac{x^2}{2} + k = ln(2) + \frac{3}{2}
+\\
+\end{gather*}
+
+\textbf{24.}
+\begin{gather*}
+    \int_{-1}^{1} e^{-x} \,dx
+\\
+    \textbf{u = -x}
+\\
+    = \int e^u \,du
+\\
+    = -e^u
+\\ 
+    = e^{-x} +k = e - e^{-1}
+\end{gather*}
+
+\textbf{25.}
+\begin{gather*}
+    \int_{0}^{1} \frac{1}{1+x^2} \,dx
+\\
+    = arctan(x) + k = \frac{\pi}{4}
+\\
+\end{gather*}
+
+\textbf{26.}
+\begin{gather*}
+    \int_{0}^{\frac{1}{2}} \frac{1}{\sqrt(1 - x^2)} \,dx
+\\
+    = arcsen(x) + k = \frac{\pi}{6}
+\\
+\end{gather*}
+
+\textbf{27.}
+\begin{gather*}
+    \int_{1}^{2} \frac{x^3 + 1}{x} \,dx
+\\
+    = \int (x^2 + \frac{1}{x})\,dx
+\\
+    = \int x^2 \,dx + \int \frac{1}{x}\,dx
+\\ 
+    = ln(x) + \frac{x^3}{3} + k = ln(2) + \frac{7}{3}
+\end{gather*}
+
+\textbf{28.}
+\begin{gather*}
+    \int sen(x) \,dx
+\\
+    = - cos(x) + k
+\end{gather*}
+
+\textbf{29.}
+\begin{gather*}
+    \int sen(2x) \,dx
+\\
+    \textbf{u = 2x}
+\\
+    = \frac{1}{2} \int sen(u)\,du
+\\ 
+    = -\frac{cos(u)}{2}
+\\ 
+    = -\frac{cos(2x)}{2} + k
+\end{gather*}
+
+\textbf{30.}
+\begin{gather*}
+    \int cos(5x) \,dx
+\\
+    \textbf{u = 5x} 
+\\
+    = \frac{1}{5}\int cos (u)\,du    
+\\
+    = \frac{1}{5} (sen(u))
+\\ 
+    = \frac{sen(5x)}{5} + k
+\\
+\end{gather*}
+
+\textbf{31.}
+\begin{gather*}
+    \int cos \sqrt(3)t \,dt
+\\
+    = cos \sqrt(3) \int t\,dt
+\\
+    = \frac{cos(\sqrt(3)) t^2}{2} + k
+\\
+\end{gather*}
+
+\textbf{32.}
+\begin{gather*}
+    \int (\frac{1}{2} - \frac{1}{2}cos(2x))\,dx
+\\
+    = \int (\frac{1}{2} - \frac{cos(2x)}{2})\,dx
+\\
+    = \frac{1}{2} \int 1\,dx - \frac{1}{2} \int cos(2x)\,dx
+\\
+    = \frac{x}{2} - \frac{(2x)}{4} + k
+\\
+    = \frac{sen(2x)-2x}{4}
+\end{gather*}
+
+\textbf{33.}
+\begin{gather*}
+    \int (2 + \frac{1}{3} sen2x)\,dx
+\\
+    = \int (\frac{sen2x}{3} + 2)\,dx
+\\
+    = \frac{1}{3} \int sen2x\,dx + 2 \int 1\,dx
+\\
+    = 2x - \frac{cos(2x)}{6} + k
+\\
+    = \frac{sen(2x)-2x}{4}
+\end{gather*}
+
+\textbf{34.}
+\begin{gather*}
+    \int_{0}^{\frac{\pi}{3}} sen 2x\,dx
+\\
+    = \int sen 2x\,dx
+\\
+    \textbf{u = 2x}
+\\
+    = \frac{1}{2} \int sen \,du
+\\
+    = \frac{1}{2}(-cos(u))
+\\
+    = - \frac{cos(u)}{2}
+\\
+    =  - \frac{cos(2x)}{2} + k = \frac{3}{4}
+\end{gather*}
+
+\textbf{35.}
+\begin{gather*}
+    \int_{\frac{\pi}{2}}^{\frac{-\pi}{2}} cos (\frac{X}{2})\,dx
+\\
+    \textbf{u = } \frac{x}{2}
+\\
+    = 2\int cos (u) \,du
+\\
+    = 2(sen(u))
+\\
+    = 2 sen(\frac{x}{2}) + k = =  2^{\frac{3}{2}}
+\end{gather*}
+
+\textbf{36.}
+\begin{gather*}
+    \int cos^2 2x\,dx
+\\
+    \textbf{u = 2x}
+\\
+    = \frac{1}{2} \int cos^2 (u) \,du
+\\
+    = \frac{cos(u)sen(u)}{2} + \frac{1}{2}\int 1\,du
+\\
+    = \frac{cos(u)sen(u)}{2} + \frac{u}{2}
+\\
+    = \frac{cos(2x)sen(2x)}{4} + \frac{x}{2} + k
+\\
+    = \frac{cos(4x) + 4x}{8} + k
+\end{gather*}
+
+\textbf{37.}
+\begin{gather*}
+    \int cos^2 5x\,dx
+\\
+    \textbf{u = 5x}
+\\
+    = \frac{1}{5} \int cos^2 (u) \,du
+\\
+    = \frac{cos(u)sen(u)}{10} + \frac{u}{10}
+\\
+    = \frac{cos(5x)sen(5x)}{10} + \frac{x}{2} + k
+\\
+    = \frac{cos(10x) + 10x}{20} + k
+\end{gather*}
+
+\textbf{38.}
+\begin{gather*}
+    \int sen^2 3x\,dx
+\\
+    \textbf{u = 3x}
+\\
+    = \frac{1}{3} \int sen^2 (u) \,du
+\\
+    = \frac{cos(u)sen(u)}{6} + \frac{u}{6}
+\\
+    = \frac{cos(3x)sen(3x)}{6} + \frac{x}{6} + k
+\\
+    = \frac{sen(6x)-6x}{12} + k
+\end{gather*}
+
+\textbf{39.}
+\begin{gather*}
+    \int cos^2 (\frac{x}{2})\,dx
+\\
+    \textbf{u = } \frac{x}{2}
+\\
+    = 2 \int cos^2 (u) \,du
+\\
+    = \frac{cos(u)sen(u)}{2} + \frac{1}{2}\int 1\,du
+\\
+    = \frac{cos(u)sen(u)}{2} + \frac{u}{2}
+\\
+    = \frac{x}{2} + cos(\frac{x}{2}) + sen(\frac{x}{2}) + k
+\\
+    = \frac{sen(x) + x}{2} + k
+\end{gather*}
+
+\textbf{39.}
+\begin{gather*}
+    \int cos^2 (\frac{x}{2})\,dx
+\\
+    \textbf{u = } \frac{x}{2}
+\\
+    = 2 \int cos^2 (u) \,du
+\\
+    = \frac{cos(u)sen(u)}{2} + \frac{1}{2}\int 1\,du
+\\
+    = \frac{cos(u)sen(u)}{2} + \frac{u}{2}
+\\
+    = \frac{x}{2} + cos(\frac{x}{2}) + sen(\frac{x}{2}) + k
+\\
+    = \frac{sen(x) + x}{2} + k
+\end{gather*}
+
+\textbf{40.}
+\begin{gather*}
+    \int (senx + cosx)^2\,dx
+\\
+    = \int (^2(x) + 2cos(x)+cos^2(x))\,dx
+\\
+    = \int ^2(x)\,dx + 2\int cos(x)(x)\,dx + \int cos^2(x)\,dx
+\\
+    = ^2(x) + x + k
+\\
+\end{gather*}
+
+\textbf{41.}
+\begin{gather*}
+    \int tg x\,dx
+\\
+    = \int \frac{sen(x)}{cos(x)} \,dx
+\\
+    \textbf {u = cos(x)}
+\\
+    = - \int \frac{1}{u} \,du
+\\
+    = -ln(u)
+\\
+    = -ln(cos(x)) + k
+\\
+\end{gather*}
+
+\textbf{42.}
+\begin{gather*}
+    \int sec^2 x \,dx
+\\
+    = tg(x) + k
+\end{gather*}
+
+\textbf{43.}
+\begin{gather*}
+    \int tg^2 x \,dx
+\\
+    = \int (sec^2(x)-1)\,dx
+\\ 
+    = \int sec^2(x)\,dx - \int 1\,dx
+\\
+    = tg(x) - x + k
+\end{gather*}
+
+\textbf{44.}
+\begin{gather*}
+    \int 5^x + e^{-x} \,dx
+\\
+    = \int 5^x\,dx + \int e^{-x}\,dx
+\\ 
+    = \frac{5^x}{ln(5)} - e^{-x} + k
+\\
+\end{gather*}
+
+\textbf{45.}
+\begin{gather*}
+    \int (x + sec^2 3x) \,dx
+\\
+    = \int sec^2(3x) \,dx + \int x \,dx
+\\
+    \textbf{u = 3x}
+\\
+    \frac{1}{3}\int sec(u) \,du + (\frac{x^2}{2})
+\\
+    \frac{tg(u)}{3} + (\frac{x^2}{2})
+\\
+    \frac{tg(3x)}{3} + \frac{x^2}{2} + k
+\\
+\end{gather*}
+
+\textbf{46.}
+\begin{gather*}
+    \int (cos^3x senx) \,dx
+\\
+    \textbf{u = cos(x)}
+\\
+    -\int u^3 \,du
+\\
+    -\frac{u^4}{4}
+\\
+    -\frac{cos^4(x)}{4} + k
+\\
+\end{gather*}
+
+\textbf{47.}
+\begin{gather*}
+    \int \frac{2}{x+3} \,dx
+\\
+    \textbf{u = x + 3}
+\\
+    = 2\int \frac{1}{u}\,du
+\\
+    = 2ln(u)
+\\
+    = 2ln(x + 3) + k
+\\
+\end{gather*}
+
+\textbf{48.}
+\begin{gather*}
+    \int \frac{5}{4x+3} \,dx
+\\
+    \textbf{u = 4x + 3}
+\\
+    = \frac{5}{4}\int \frac{1}{u}\,du
+\\
+    = \frac{5}{4} ln(u)
+\\
+    = \frac{5}{4} ln(4x+3)
+\\ 
+    = \frac{5 ln(4x+3)}{4} + k
+\\
+\end{gather*}
+
+\textbf{49.}
+\begin{gather*}
+    \int \frac{3x}{5+6x^2}\,dx
+    \\
+    \textbf{u = } 6x^2+5
+\\
+    = \frac{1}{4}\int \frac{1}{u}\,du
+\\
+    = \frac{1}{4} ln(u)    
+\\ 
+    = \frac{ln(u)}{4}
+\\
+    = \frac{ln(6x^2+5)}{4} + k
+\\
+\end{gather*}
+
+\textbf{50.}
+\begin{gather*}
+    \int \frac{1}{(x - 1)^3} \,dx
+\\
+    \textbf{u = x - 1}
+\\
+    = \int \frac{1}{u^3}\,du
+\\
+    = -\frac{1}{2u^2}
+\\ 
+    = -\frac{1}{2(x-1)^2} + k
+\\
+\end{gather*}
+
+\end{document}

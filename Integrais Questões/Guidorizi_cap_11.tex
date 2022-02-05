@@ -1,0 +1,313 @@
+\documentclass{article}
+\title{Capítulo 10}
+\author{Lucas Ferreira - 0418399}
+\date{}
+\usepackage{amsmath, graphicx, xcolor}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercícios 11.5}
+1.
+\begin{gather*}
+    \int_{0}^{1} x+3\, dx
+\\
+    =\int x \,dx + 3\int 1\,dx
+\\
+    =\frac{x^2}{2} + 3x + k
+\\
+    =\frac{(x + 6)}{2} + k = \frac{7}{2}
+\\
+\end{gather*}
+2.
+\begin{gather*}
+    \int_{-1}^{1} 2x+1\, dx
+\\
+    = 2\int x \,dx + \int 1\,dx
+\\
+    = x^2 + x + k = 2
+\\
+\end{gather*}
+3.
+\begin{gather*}
+    \int_{0}^{4} \frac{1}{2}\, dx
+\\
+    =\frac{1}{2}\int 1\,dx
+\\
+    =\frac{x^2}{2} + k = 2
+\\
+\end{gather*}
+4.
+\begin{gather*}
+    \int_{-2}^{1} (2x+1)\, dx
+\\
+    \int x^2\,dx - \int 1\,dx
+\\
+    =\frac{x^3}{3} -x + k = 0
+\\
+\end{gather*}
+5.
+\begin{gather*}
+    \int_{-1}^{2} 4\, dx
+\\
+    4 \int 1\,dx
+\\
+    4x + k = 12
+\\
+\end{gather*}
+6.
+\begin{gather*}
+    \int_{1}^{3} \frac{1}{x^3}\, dx
+\\
+    \frac{1}{2x^2} + k = \frac{4}{9}
+\\
+\end{gather*}
+7.
+\begin{gather*}
+    \int_{-1}^{1} 5\, dx
+\\
+    6\int 1\,dx
+\\
+    5x + k =5
+\\
+\end{gather*}
+8.
+\begin{gather*}
+    \int_{0}^{1} (x^2 + 3x - 3)\, dx
+\\
+    \int x^2\,dx + 3\int x\,dx - 3\int 1\,dx
+\\
+    \frac{x^3}{3} + \frac{3x^2}{2} - 3x + k = -\frac{7}{6}
+\\
+\end{gather*}
+9.
+\begin{gather*}
+    \int_{0}^{1} (5x^3-\frac{1}{2})\, dx
+\\
+    5\int x^3\,dx - \frac{1}{2}\int 1\,dx
+\\
+    \frac{5x^4}{4} - \frac{x}{2} + k = \frac{3}{4}
+\\
+\end{gather*}
+10.
+\begin{gather*}
+    \int_{1}^{1} (2x+3)\, dx
+\\
+    2\int x\,dx + 3\int 1\,dx
+\\
+    x^2 + 3x + k = 0
+\\
+\end{gather*}
+11.
+\begin{gather*}
+    \int_{1}^{0} (2x+3)\, dx
+\\
+    2\int x\,dx + 3\int 1\,dx
+\\
+    x^2 + 3x + k = -4
+\\
+\end{gather*}
+12.
+\begin{gather*}
+    \int_{-2}^{-1} (\frac{1}{x^2}+x)\, dx
+\\
+    \int x\,dx + \int \frac{1}{x^2} \,dx
+\\
+    \frac{x^2}{2} - \frac{1}{x} + k = -1
+\\
+\end{gather*}
+13.
+\begin{gather*}
+    \int_{0}^{4} \sqrt(x)\, dx
+\\
+    \int \sqrt(x)\,dx
+\\
+    \int x^n\,dx
+\\
+    \frac{2x^{\frac{3}{2}}}{3} + k = \frac{16}{3}
+\\
+\end{gather*}
+14.
+\begin{gather*}
+    \int_{1}^{4} \frac{1}{\sqrt(x)}\, dx
+\\
+    \int \frac{1}{\sqrt(x)}\,dx
+\\
+    2\sqrt(x) + k = 2
+\\
+\end{gather*}
+15.
+\begin{gather*}
+    \int_{0}^{8} \sqrt[3](x)\, dx
+\\
+    \int \sqrt[3](x)\,dx
+\\
+    \frac{3x^{\frac{4}{3}}}{4} + k = 12
+\\
+\end{gather*}
+16.
+\begin{gather*}
+    \int_{-1}^{0} (x^3-2x+3)\, dx
+\\
+    \int x^3\,dx - 2\int x \,dx + 3\int 1\,dx
+\\
+    \frac{x^4}{4} - x^2 + 3x + k = \frac{15}{4}
+\\
+\end{gather*}
+17.
+\begin{gather*}
+    \int_{0}^{1} \sqrt[8](x)\, dx
+\\
+    \int \sqrt[8](x)\, dx
+\\
+    \frac{8x^{\frac{9}{8}}}{9} + k = \frac{8}{9}
+\\
+\end{gather*}
+18.
+\begin{gather*}
+    \int_{1}^{2} (x^3 + x + \frac{1}{x^3})\, dx
+\\
+    \int x^3\, dx + \int x\, dx \int \frac{1}{x^3}\, dx
+\\
+    \frac{\frac{x^4}{4} + \frac{x^2}{2} - \frac{1}{2x^2}}{4x^2} + k = \frac{45}{8}
+\\
+\end{gather*}
+19.
+\begin{gather*}
+    \int_{0}^{1} (x+\sqrt[4](x))\, dx
+\\
+    \int x\, dx + \int \sqrt[4](x)\, dx
+\\
+    \frac{x^2}{2} + \frac{4x^{\frac{5}{4}}}{5} + k = \frac{13}{10}
+\\
+\end{gather*}
+20.
+\begin{gather*}
+    \int_{1}^{3} (5+\frac{1}{x^2})\, dx
+\\
+    5\int 1\, dx + \int \frac{1}{x^2}\, dx
+\\
+    5x - \frac{1}{x} + k = \frac{32}{3}
+\\
+\end{gather*}
+21.
+\begin{gather*}
+    \int_{-3}^{3} x^3\, dx
+\\
+    \int x^3\, dx
+\\
+    \frac{x^4}{4} + k = 0
+\\
+\end{gather*}
+22.
+\begin{gather*}
+    \int_{-1}^{1} (x^7+x^3+x)\, dx
+\\
+    \int x^7\, dx + \int x^3\, dx + \int x\, dx
+\\
+    \frac{x^8}{8} + \frac{x^4}{4} + \frac{x^2}{2} + k = 0
+\\
+\end{gather*}
+23.
+\begin{gather*}
+    \int_{\frac{1}{2}}^{1} (x+3)\, dx
+\\
+    \int x\, dx + 3\int 1\, dx
+\\
+    \frac{x^2}{2} + 3x + 4 = \frac{15}{8}
+\\
+\end{gather*}
+24.
+\begin{gather*}
+    \int_{1}^{4} (5x + \sqrt(x))\, dx
+\\
+    5\int x\, dx + \int \sqrt(x)\, dx
+\\
+    \frac{5x^2}{2} + \frac{2x^{\frac{3}{2}}}{3} + k
+\\
+    \frac{15x^2 + 4x^{\frac{3}{2}}}{6} + k = \frac{253}{6}
+\\
+\end{gather*}
+25.
+\begin{gather*}
+    \int_{1}^{0} (x^7 - x+3)\, dx
+\\
+    \int x^7\, dx + \int x\, dx + 3\int 1\,dx
+\\
+    \frac{x^8}{8} + \frac{x^2}{2} + 3x + k
+\\
+    \frac{x(x^7 - 4x + 24)}{8} + k = \frac{-21}{8}
+\\
+\end{gather*}
+26.
+\begin{gather*}
+    \int_{1}^{2} \frac{1+x}{x^3}\, dx
+\\
+    \int ( \frac{1}{x^2} + \frac{1}{x^3} )\, dx
+\\
+    \int \frac{1}{x^2}\, dx + \int \frac{1}{x^3}\, dx
+\\
+    -\frac{1}{x} - \frac{1}{2x^2} + k
+\\
+    \frac {2x + 1}{2x^2} + k = \frac{7}{8}
+\\
+\end{gather*}
+27.
+\begin{gather*}
+    \int_{0}^{1} (x+1)^2\, dx
+\\
+    \textbf{u = (x+1)}
+\\
+    \int u^2\, du
+\\
+    \frac {u^3}{3}
+\\
+    \frac {(x + 1)^3}{3} + k = \frac{7}{3}
+\\
+\end{gather*}
+28.
+\begin{gather*}
+    \int_{1}^{4} \frac{1 + x}{\sqrt(x)}\, dx
+\\
+    \int (\sqrt(x) + \frac{1}{\sqrt(x)})\,dx
+\\
+    \int (\sqrt(x)\, dx + \int \frac{1}{\sqrt(x)})\,dx
+\\
+    \frac{2x^{\frac{3}{2}}}{3} + 2\sqrt(x) + k
+\\
+    \frac{2\sqrt(x) (x+3)}{3} + k = \frac{20}{3}
+\\
+\end{gather*}
+29.
+\begin{gather*}
+    \int_{0}^{1} (x-3)^2\, dx
+\\
+    \int (x-3)^2\,dx
+\\
+    \textbf{u = x-3}
+\\
+    \frac{u^3}{3}
+\\
+    \frac{(x-3)^3}{3} + k = \frac{19}{3}
+\\
+\end{gather*}
+30.
+\begin{gather*}
+    \int_{0}^{2} (t^2 + 3t - 1)\, dt
+\\
+    \int t^2\,dt + 3\int t\,dt - \int 1\,dt
+\\
+    \frac{t^3}{3} + \frac{3t^2}{2} - t + k
+\\
+    \frac{t(2t^2 + 9t - 6)}{6} + k
+\\
+    \frac{20}{3}
+\\
+\end{gather*}
+
+
+
+
+
+\end{document}

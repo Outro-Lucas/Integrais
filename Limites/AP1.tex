@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[fontsize=15pt]{scrextend}
+\usepackage[shortlabels]{enumitem}
+
+
+\title{Avaliação Parcial 1}
+\author{Lucas Ferreira - 418399}
+
+\begin{document}
+
+\maketitle
+
+\section{Calcule o Limite a seguir.}
+{\LARGE $ \lim_{x\to 2} {\frac {\sqrt[4] {x} - \sqrt[4]{2}}{x-2}} $}
+
+\begin{enumerate}[(a)]
+     \Large \item $\frac {1}{8}$
+     \item $\frac {1}{4 \sqrt[2]{4}}$
+     \item $\frac {1}{4 \sqrt[4]{8}}$
+     \item $\sqrt[4] {2^3}$
+     \item 2
+\end{enumerate}
+
+\begin{description}
+    \item[Resolução:]
+\end{description}
+
+{\Large $ \lim_{x\to 2} {\frac {\sqrt[4] {x} - \sqrt[4]{2}}{x-2}} $}
+
+{\Large $ \sqrt[4]{x} - \sqrt[4]{2} = z$}
+
+{\Large $ \sqrt[4]{x} = z + \sqrt[4]{2}$}
+
+{\Large $ x = (z + \sqrt[4]{2})^4$}
+
+{\Large {$ \rightarrow $} $ \lim_{x\to 2} {\sqrt[4] {x} - \sqrt[4]{2} }
+$}
+
+{\Large {$ \rightarrow $} $ \lim_{x\to 2}  { z = 0}
+$}
+
+{\Large z {$ \rightarrow $} 0}
+
+\begin{description}
+    \item[Ou seja:]
+\end{description}
+
+{\Large $ \lim_{z\to 0} {\frac {z}{(2 + \sqrt[4]{2})^4} - 2} $} =
+
+{\Large $ \lim_{z\to 0} {\frac {z}{z^4 + 4z^3 \sqrt[4]{2} + 6z^2 \sqrt[4]{2^2} + 4 \sqrt[4]{2^3} + 2 - 2}} $} =
+
+{\Large $ \lim_{z\to 0} {\frac {z}{z(z^3 + 4z^2 \sqrt[4]{2} + 6z \sqrt[4]{2^2} + 4 \sqrt[4]{2^3})}} $} =
+
+{\Large $ \lim_{z\to 0} {\frac {z}{z^3 + 4z^2 \sqrt[4]{2} + 6z \sqrt[4]{4} + 4 \sqrt[4]{8}}} $} =
+
+\begin{description}
+    \item[Com z = 0, temos:]
+\end{description}
+
+\Huge $\frac {1}{4 \sqrt[4]{8}}$
+
+\pagebreak
+
+\section{Calcule o Limite a seguir.}
+{\LARGE $ \lim_{x\to 0} {\frac {x}{\sin (x)}} $}
+
+\begin{enumerate}[(a)]
+     \Large \item $\frac {1}{2}$
+     \item $\sin (2) $
+     \item $\frac {1}{\sqrt{2}}$
+     \item 2
+     \item 1
+\end{enumerate}
+
+\begin{description}
+    \item[Resolução:]
+\end{description}
+
+{\LARGE $ \lim_{x\to 0} {\frac {x}{\sin (x)}} $}
+
+{\LARGE $ \lim_{x\to 0} {(\frac {x}{\sin (x)})^{-1}} $}
+
+{\LARGE $ \lim_{x\to 0} {\frac {\sin (x)}{x}} $} = 1 \vspace{2cm}
+
+\small\textbf{\textit{Fonte: LIMITES do livro H. L. Guidorizzi}}
+
+\end{document}

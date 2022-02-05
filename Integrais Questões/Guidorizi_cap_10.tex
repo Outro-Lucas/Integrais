@@ -1,0 +1,211 @@
+\documentclass{article}
+\title{Capítulo 10}
+\author{Lucas Ferreira - 0418399}
+\date{}
+\usepackage{amsmath, graphicx, xcolor}
+
+\begin{document}
+
+\maketitle
+
+\section{Exercícios 10.2}
+1.
+\begin{gather*}
+    \int x \,dx
+\\
+    =\frac{x^2}{2} + k
+\end{gather*}
+2.
+\begin{gather*}
+    \int 3 \,dx
+\\
+    = 3x + k
+\end{gather*}
+3.
+\begin{gather*}
+    \int 3x + 1 \,dx
+\\
+    = \int 3x \,dx + \int 1 \,dx + k
+\\
+    = \frac{3x^2}{2} + k + x + k'
+\\
+    = \frac{3x^2}{2} + x + k
+\end{gather*}
+4.
+\begin{gather*}
+    \int (x^2 + x + 1) \,dx
+\\
+    = \int x^2 \,dx + \int x \,dx + \int 1 \,dx
+\\
+    = \frac{x^3}{3} +\frac{x^2}{2} + x + k
+\end{gather*}
+5.
+\begin{gather*}
+    \int x^3 \,dx
+\\
+    = \frac{x^4}{4} + k
+\end{gather*}
+6.
+\begin{gather*}
+    \int (x^3 + 2x + 3) \,dx
+\\
+    = \int x^3 \,dx + \int 2x \,dx + \int 3 \,dx
+\\
+    = \frac{x^4}{4} + 2\int x \,dx + 3x + k
+\\
+    = \frac{x^4}{4} + 2 * \frac{x^2}{2} + 3x + k
+\\
+    = \frac{x^4}{4} + x^2 + 3x + k
+\end{gather*}
+7.
+\begin{gather*}
+    \int \frac{1}{x^2} \,dx
+\\
+    = x^{-1}/-1 + k
+\\
+    = \frac{1}{x} * \frac{1}{-1} + k
+\\
+    = \frac{-1}{x} + k
+\end{gather*}
+8.
+\begin{gather*}
+    \int (x + \frac{1}{x^3}) \,dx
+\\
+    = \int x \,dx + \int \frac{1}{x^3} \,dx
+\\
+    = \frac{x^2}{2} + \frac{x^{-2}}{-2} + k
+\\
+    = \frac{x^2}{2} + \frac{1}{x^2} * \frac{1}{-2} + k
+\\
+    = \frac{x^2}{2} - \frac{1}{2x^2} + k
+\end{gather*}
+9.
+\begin{gather*}
+    \int \sqrt{x} \,dx
+\\
+    = \int x^\frac{1}{2} \,dx
+\\
+    = \frac{ \sqrt{x^3}}{\frac{3}{2}}
+\\
+    = \sqrt{x^3} * {\frac{2}{3}}
+\\
+    = \frac{2\sqrt{x^3}}{3} + k
+\end{gather*}
+10.
+\begin{gather*}
+    \int \sqrt[3]{x} \,dx
+\\
+    = \int x^\frac{1}{3} \,dx
+\\
+    = \frac{x^\frac{4}{3}}{\frac{4}{3}} + k
+\\
+    = \sqrt[3]{x^4} * \frac{3}{4}
+\\
+    = \frac{3\sqrt[3]{x^4}}{4} + k
+\end{gather*}
+11.
+\begin{gather*}
+    \int (x + \frac{1}{x}) \,dx
+\\
+    = \int x \,dx + \int \frac{1}{x} \,dx
+\\
+    = \frac{x^2}{2} + \ln x + k
+\end{gather*}
+12.
+\begin{gather*}
+    \int 2 + \sqrt[4]{x} \,dx
+\\
+    = \int 2 \,dx + \int \sqrt[4]{x} \,dx
+\\
+    = 2x + \int x^\frac{1}{4} \,dx
+\\
+    = 2x + \frac{x^\frac{1}{4}}{\frac{5}{4}} + k
+\\
+    = 2x + \frac{\sqrt[4]{x^5}}{\frac{5}{4}} + k
+\\
+    = 2x + \sqrt[4]{x^5} * \frac{4}{5} + k
+\\
+    = 2x + \frac{4\sqrt[4]{x^5}}{5} + k
+\end{gather*}
+13.
+\begin{gather*}
+    \int \sqrt{x} + \frac{1}{x^2} \,dx
+\\
+    = \int \sqrt{x} \,dx + \int \frac{1}{x^2} \,dx
+\\
+    = \frac{2\sqrt{x^3}}{3} + (-\frac{1}{x}) + k
+\\
+    = \frac{2\sqrt{x^3}}{3} - \frac{1}{x} + k
+\\
+\end{gather*}
+14.
+\begin{gather*}
+    \int (\frac{2}{x} + \frac{3}{x^2}) \,dx
+\\
+    = 2 * \int \frac{1}{x} \,dx + 3 * \int \frac{1}{x^2} \,dx
+\\
+    = 2 \ln(x) + 3 * (\frac{-1}{x}) + k
+\\
+    = 2 \ln(x) + (\frac{-3}{x}) + k
+\\
+    = 2 \ln(x) - \frac{3}{x} + k
+\\
+\end{gather*}
+15.
+\begin{gather*}
+    \int (2x^3 - \frac{1}{x^4}) \,dx
+\\
+    = 2 * \int x^3 \,dx - (\frac{-1}{3x^3}) + k
+\\
+    = \frac{x^4}{2} + \frac{1}{3x^3} + k
+\\
+\end{gather*}
+16.
+\begin{gather*}
+    \int sen \alpha x \,dx
+\\
+    = \frac{1}{\alpha} \cos \alpha x + k
+\\
+    = \int sen u \frac{du}{\alpha} \
+\\
+    = \frac{1}{\alpha} \int sen u \,du
+\\
+    = -\frac{1}{\alpha} * (\cos u + k)
+\\
+    = -\frac{1}{\alpha} \cos \alpha x + k
+\end{gather*}
+17.
+\begin{gather*}
+    \int cos \alpha x \,dx
+\\
+    = \frac{1}{\alpha} sen \alpha x + k
+\\
+    = \int cos u \frac{du}{\alpha} \
+\\
+    = \frac{1}{\alpha} \int cos u \,du
+\\
+    = \frac{1}{\alpha} * (sen u + k)
+\\
+    = \frac{1}{\alpha} sen \alpha x + k
+\end{gather*}
+18.
+\begin{gather*}
+    \int e^{2x} \,dx
+\\
+    = \frac{1}{2} \int e^u \,du
+\\
+    = \frac{1}{2} * e^u + k
+\\
+    = \frac{e^{2x}}{2} + k
+\end{gather*}
+19.
+\begin{gather*}
+    \includegraphics[width=5cm]{19.png}
+\end{gather*}
+20.
+\begin{gather*}
+    \includegraphics[width=5cm]{20.png}
+\end{gather*}
+
+
+\end{document}
